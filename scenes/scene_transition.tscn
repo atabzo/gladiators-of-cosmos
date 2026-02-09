@@ -2,9 +2,8 @@
 
 [ext_resource type="Script" uid="uid://cyd53dvglwi05" path="res://scenes/paper-wipe.gd" id="1_0wykx"]
 
-[sub_resource type="Animation" id="Animation_0wykx"]
-resource_name = "wipe_in"
-length = 0.5
+[sub_resource type="Animation" id="Animation_rujfs"]
+length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -18,8 +17,9 @@ tracks/0/keys = {
 "values": [Vector2(1920, 0)]
 }
 
-[sub_resource type="Animation" id="Animation_rujfs"]
-length = 0.001
+[sub_resource type="Animation" id="Animation_0wykx"]
+resource_name = "wipe_in"
+length = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -47,7 +47,8 @@ anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 1920.0
-offset_right = 1920.0
+offset_right = 2005.0
+offset_bottom = 89.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.17926553, 0.39578608, 0.2913666, 1)

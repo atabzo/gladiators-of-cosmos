@@ -38,9 +38,9 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_aop0r")
 [node name="header-text" type="Label" parent="message-window"]
 layout_mode = 0
 offset_left = 17.0
-offset_top = 21.0
+offset_top = 15.0
 offset_right = 622.0
-offset_bottom = 81.0
+offset_bottom = 75.0
 theme_override_fonts/font = ExtResource("1_tm3jx")
 theme_override_font_sizes/font_size = 43
 text = "Hey, You've a message!!!"
@@ -57,10 +57,17 @@ text = "Alrighty"
 script = ExtResource("2_2hsdd")
 
 [node name="LovelyFlowers(14)" type="Sprite2D" parent="message-window"]
-position = Vector2(622.0001, 26.000004)
+position = Vector2(633.0001, 30)
 scale = Vector2(0.1585034, 0.14520548)
 texture = ExtResource("3_hla4q")
 script = ExtResource("4_2hsdd")
 
 [node name="SoundClick" type="AudioStreamPlayer" parent="message-window"]
 stream = ExtResource("5_lu3sy")
+
+[node name="Label" type="Label" parent="message-window"]
+layout_mode = 0
+offset_left = 45.0
+offset_top = 118.0
+offset_right = 592.0
+offset_bottom = 378.0
