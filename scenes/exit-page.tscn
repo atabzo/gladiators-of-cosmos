@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://pecmnci3bhci"]
+[gd_scene format=3 uid="uid://pecmnci3bhci"]
 
 [ext_resource type="FontFile" uid="uid://dkkllk7rn2lwp" path="res://fonts/bitcount.ttf" id="1_tkqgx"]
 [ext_resource type="Texture2D" uid="uid://dy28g46eot8ko" path="res://images/more icons/sad.png" id="2_t8agq"]
@@ -98,27 +98,27 @@ func _on_pressed():
 	get_tree().change_scene_to_file(next_scene)
 "
 
-[node name="exit-page" type="Node2D"]
+[node name="exit-page" type="Node2D" unique_id=1559247362]
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1575013743]
 offset_left = -25.0
 offset_top = 7.0
 offset_right = 1946.0
 offset_bottom = 1112.0
 color = Color(0.47572875, 0.953677, 0, 1)
 
-[node name="Label" type="Label" parent="."]
-offset_left = 81.0
-offset_top = 512.0
-offset_right = 891.0
-offset_bottom = 625.0
+[node name="Label" type="Label" parent="." unique_id=1123965072]
+offset_left = 64.0
+offset_top = 494.0
+offset_right = 874.0
+offset_bottom = 607.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("1_tkqgx")
 theme_override_font_sizes/font_size = 93
 text = "wait... you sure?"
 autowrap_mode = 2
 
-[node name="Button" type="Button" parent="."]
+[node name="Button" type="Button" parent="." unique_id=1964523405]
 offset_left = 1094.0
 offset_top = 788.0
 offset_right = 1569.0
@@ -130,16 +130,16 @@ theme_override_font_sizes/font_size = 57
 text = "yes, I'll leave"
 script = SubResource("GDScript_axtjj")
 
-[node name="MoreIcons(4)" type="Sprite2D" parent="."]
+[node name="MoreIcons(4)" type="Sprite2D" parent="." unique_id=742093631]
 position = Vector2(1530, 617)
 texture = ExtResource("3_g333y")
 
-[node name="Flowers" type="Sprite2D" parent="."]
+[node name="Flowers" type="Sprite2D" parent="." unique_id=1151486169]
 position = Vector2(202, 188)
 rotation = -3.3859386
 texture = ExtResource("4_dpu3s")
 
-[node name="Button2" type="Button" parent="."]
+[node name="Button2" type="Button" parent="." unique_id=1572926996]
 offset_left = 60.0
 offset_top = 771.0
 offset_right = 596.0
@@ -149,15 +149,15 @@ theme_override_font_sizes/font_size = 71
 text = "uhm I'll play!"
 script = SubResource("GDScript_dpu3s")
 
-[node name="Grateful" type="Sprite2D" parent="."]
+[node name="Grateful" type="Sprite2D" parent="." unique_id=1134822703]
 position = Vector2(759.99994, 834)
 scale = Vector2(0.6330798, 0.6708861)
 texture = ExtResource("4_axtjj")
 
-[node name="Sad" type="Sprite2D" parent="."]
+[node name="Sad" type="Sprite2D" parent="." unique_id=1135464537]
 position = Vector2(1726.0001, 864.00006)
 scale = Vector2(0.60777384, 0.60034007)
 texture = ExtResource("2_t8agq")
 
-[node name="SoundClick" type="AudioStreamPlayer" parent="."]
+[node name="SoundClick" type="AudioStreamPlayer" parent="." unique_id=446083720]
 stream = ExtResource("6_axtjj")

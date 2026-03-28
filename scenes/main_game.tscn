@@ -1,7 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://ce6gc3x677j51"]
+[gd_scene format=3 uid="uid://ce6gc3x677j51"]
 
 [ext_resource type="PackedScene" uid="uid://cchadmwbfkspu" path="res://scenes/intro_scene.tscn" id="2_72e8q"]
 
-[node name="game-window" type="Node2D"]
+[node name="game-window" type="Node2D" unique_id=1162010797]
 
-[node name="intro-scene" parent="." instance=ExtResource("2_72e8q")]
+[node name="intro-scene" parent="." unique_id=64007882 instance=ExtResource("2_72e8q")]
+position = Vector2(16, -29)

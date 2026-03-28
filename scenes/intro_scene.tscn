@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://cchadmwbfkspu"]
+[gd_scene format=3 uid="uid://cchadmwbfkspu"]
 
 [ext_resource type="Texture2D" uid="uid://c5egd0ijyalvy" path="res://images/end-screen icons/effects/effects (5).png" id="1_0f06d"]
 [ext_resource type="Texture2D" uid="uid://dpega4ifxil4i" path="res://images/welcome-screen/paper.png" id="2_01j2m"]
@@ -84,40 +84,40 @@ func _on_button_pressed():
 	get_tree().change_scene_to_file(next_scene)
 "
 
-[node name="intro-scene" type="Node2D"]
+[node name="intro-scene" type="Node2D" unique_id=1389294211]
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1271539194]
 offset_left = -10.0
 offset_top = -11.0
 offset_right = 1937.0
 offset_bottom = 1098.0
 color = Color(0.8522118, 1, 0.71416074, 1)
 
-[node name="Effects(5)" type="Sprite2D" parent="."]
+[node name="Effects(5)" type="Sprite2D" parent="." unique_id=2135035325]
 position = Vector2(1633.125, 543.62494)
 scale = Vector2(1.6095046, 1.3894905)
 texture = ExtResource("1_0f06d")
 
-[node name="Paper" type="Sprite2D" parent="."]
+[node name="Paper" type="Sprite2D" parent="." unique_id=477343141]
 modulate = Color(0.5444634, 0.9823, 0, 1)
 position = Vector2(815, 277)
 scale = Vector2(1.3678011, 0.6796296)
 texture = ExtResource("2_01j2m")
 
-[node name="LovelyFlowers(6)" type="Sprite2D" parent="."]
+[node name="LovelyFlowers(6)" type="Sprite2D" parent="." unique_id=352592512]
 position = Vector2(282.99988, 167)
 scale = Vector2(0.3857143, 0.4189189)
 texture = ExtResource("3_8wqor")
 script = SubResource("GDScript_qt0h2")
 
-[node name="LovelyFlowers(7)" type="Sprite2D" parent="."]
-position = Vector2(1271, 446.00003)
+[node name="LovelyFlowers(7)" type="Sprite2D" parent="." unique_id=1621335328]
+position = Vector2(1267, 446)
 scale = Vector2(0.79776245, 0.75289255)
 texture = ExtResource("4_0f06d")
 script = SubResource("GDScript_lgy7k")
 max_scale = 1.0
 
-[node name="Label" type="Label" parent="."]
+[node name="Label" type="Label" parent="." unique_id=603000598]
 modulate = Color(0.17438853, 0.2298995, 1.92523e-07, 1)
 offset_left = 434.0
 offset_top = 155.0
@@ -129,21 +129,21 @@ text = "gladiators of the cosmos"
 horizontal_alignment = 1
 autowrap_mode = 2
 
-[node name="MoreIcons(1)" type="Sprite2D" parent="."]
+[node name="MoreIcons(1)" type="Sprite2D" parent="." unique_id=540710880]
 position = Vector2(251, 805)
 texture = ExtResource("8_01j2m")
 
-[node name="MoreIcons(3)" type="Sprite2D" parent="."]
-position = Vector2(194, 551)
+[node name="MoreIcons(3)" type="Sprite2D" parent="." unique_id=664733541]
+position = Vector2(260, 599)
 scale = Vector2(0.35568824, 0.356148)
 texture = ExtResource("9_t82ha")
 
-[node name="MoreIcons(6)" type="Sprite2D" parent="."]
+[node name="MoreIcons(6)" type="Sprite2D" parent="." unique_id=877977977]
 position = Vector2(1635, 637)
 scale = Vector2(1.2069306, 1.0578563)
 texture = ExtResource("10_qt0h2")
 
-[node name="play button" type="Button" parent="."]
+[node name="play button" type="Button" parent="." unique_id=562577103]
 offset_left = 540.0
 offset_top = 688.0
 offset_right = 1167.0
@@ -153,7 +153,7 @@ theme_override_font_sizes/font_size = 72
 text = "play play play?"
 script = SubResource("GDScript_t82ha")
 
-[node name="exit button" type="Button" parent="."]
+[node name="exit button" type="Button" parent="." unique_id=632536012]
 offset_left = 537.0
 offset_top = 892.0
 offset_right = 1177.0

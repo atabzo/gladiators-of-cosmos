@@ -1,6 +1,5 @@
-[gd_scene load_steps=8 format=3 uid="uid://bfwko0sr7sj7h"]
+[gd_scene format=3 uid="uid://bfwko0sr7sj7h"]
 
-[ext_resource type="PackedScene" uid="uid://3ij332oy6agh" path="res://scenes/cosmos-background.tscn" id="1_pomre"]
 [ext_resource type="PackedScene" uid="uid://3ij332oy6agh" path="res://scenes/cosmos-background.tscn" id="2_76v1n"]
 [ext_resource type="PackedScene" uid="uid://3ftjinsp46ma" path="res://scenes/planets.tscn" id="2_i8n5b"]
 [ext_resource type="PackedScene" uid="uid://5itikjci4prl" path="res://scenes/spaceship.tscn" id="3_76v1n"]
@@ -42,35 +41,345 @@ func get_direction_text(dir: Vector2) -> String:
 		return \"NORTH ↑\"
 "
 
-[node name="alternate-quest" type="Node2D"]
+[node name="alternate-quest" type="Node2D" unique_id=735709911]
 
-[node name="cosmos-background" parent="." instance=ExtResource("1_pomre")]
-position = Vector2(-484, 619)
+[node name="cosmos-background" parent="." unique_id=136567201 instance=ExtResource("2_76v1n")]
+position = Vector2(-32, -805)
 
-[node name="cosmos-background2" parent="." instance=ExtResource("2_76v1n")]
+[node name="cosmos-background2" parent="." unique_id=138939742 instance=ExtResource("2_76v1n")]
+position = Vector2(3368, -539)
 
-[node name="planets" parent="." instance=ExtResource("2_i8n5b")]
-position = Vector2(88, -235)
+[node name="cosmos-background2" parent="cosmos-background2" unique_id=1517815000 instance=ExtResource("2_76v1n")]
+position = Vector2(-3393, -2235)
 
-[node name="Spaceship" parent="." instance=ExtResource("3_76v1n")]
-position = Vector2(1339, 359.99988)
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background2" unique_id=2012203329 instance=ExtResource("2_76v1n")]
+position = Vector2(3524, -272)
 
-[node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("target")]
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background2/cosmos-background2" unique_id=1346876348 instance=ExtResource("2_76v1n")]
+position = Vector2(-3665, -1846)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=163866841 instance=ExtResource("2_76v1n")]
+position = Vector2(3116, 58)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=458852352 instance=ExtResource("2_76v1n")]
+position = Vector2(-3432, -2041)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=690928380 instance=ExtResource("2_76v1n")]
+position = Vector2(3447, 19)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=1873428137 instance=ExtResource("2_76v1n")]
+position = Vector2(-3723, -2332)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=620337819 instance=ExtResource("2_76v1n")]
+position = Vector2(3292, -156)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=614385894 instance=ExtResource("2_76v1n")]
+position = Vector2(-3684, -1866)
+
+[node name="cosmos-background3" parent="cosmos-background2" unique_id=944149279 instance=ExtResource("2_76v1n")]
+position = Vector2(3368, -539)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3" unique_id=429734906 instance=ExtResource("2_76v1n")]
+position = Vector2(-3393, -2235)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2" unique_id=1390880541 instance=ExtResource("2_76v1n")]
+position = Vector2(7448, 2688)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2" unique_id=1626992205 instance=ExtResource("2_76v1n")]
+position = Vector2(-3665, -1846)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=220206486 instance=ExtResource("2_76v1n")]
+position = Vector2(3116, 58)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=1325395477 instance=ExtResource("2_76v1n")]
+position = Vector2(-3432, -2041)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=1967317354 instance=ExtResource("2_76v1n")]
+position = Vector2(3447, 19)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=934873253 instance=ExtResource("2_76v1n")]
+position = Vector2(-3723, -2332)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=867384075 instance=ExtResource("2_76v1n")]
+position = Vector2(3292, -156)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=567031848 instance=ExtResource("2_76v1n")]
+position = Vector2(-3684, -1866)
+
+[node name="cosmos-background3" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2" unique_id=143267430 instance=ExtResource("2_76v1n")]
+position = Vector2(7620, 2791)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3" unique_id=1845219328 instance=ExtResource("2_76v1n")]
+position = Vector2(-3665, -1846)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2" unique_id=2011858815 instance=ExtResource("2_76v1n")]
+position = Vector2(-14096, 4808)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2" unique_id=982115583 instance=ExtResource("2_76v1n")]
+position = Vector2(-3432, -2041)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=451468892 instance=ExtResource("2_76v1n")]
+position = Vector2(3447, 19)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=1549507840 instance=ExtResource("2_76v1n")]
+position = Vector2(-3723, -2332)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=193151412 instance=ExtResource("2_76v1n")]
+position = Vector2(3292, -156)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=1135208489 instance=ExtResource("2_76v1n")]
+position = Vector2(-3684, -1866)
+
+[node name="cosmos-background3" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2" unique_id=1109578420 instance=ExtResource("2_76v1n")]
+position = Vector2(-17710, -1216)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3" unique_id=1178302070 instance=ExtResource("2_76v1n")]
+position = Vector2(-3432, -2041)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2" unique_id=1789238009 instance=ExtResource("2_76v1n")]
+position = Vector2(3447, 19)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2" unique_id=1919548775 instance=ExtResource("2_76v1n")]
+position = Vector2(-3723, -2332)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=823709300 instance=ExtResource("2_76v1n")]
+position = Vector2(3292, -156)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=284999122 instance=ExtResource("2_76v1n")]
+position = Vector2(-3684, -1866)
+
+[node name="cosmos-background4" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2" unique_id=570654062 instance=ExtResource("2_76v1n")]
+position = Vector2(-17710, -1216)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background4" unique_id=1380419362 instance=ExtResource("2_76v1n")]
+position = Vector2(-3432, -2041)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background4/cosmos-background2" unique_id=82516337 instance=ExtResource("2_76v1n")]
+position = Vector2(3447, 19)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background4/cosmos-background2/cosmos-background2" unique_id=1663612124 instance=ExtResource("2_76v1n")]
+position = Vector2(-3723, -2332)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background4/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=732687581 instance=ExtResource("2_76v1n")]
+position = Vector2(3292, -156)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background4/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=37032256 instance=ExtResource("2_76v1n")]
+position = Vector2(-3684, -1866)
+
+[node name="cosmos-background3" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background4" unique_id=384491913 instance=ExtResource("2_76v1n")]
+position = Vector2(-17710, -1216)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background4/cosmos-background3" unique_id=1733557995 instance=ExtResource("2_76v1n")]
+position = Vector2(-3432, -2041)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background4/cosmos-background3/cosmos-background2" unique_id=1212683435 instance=ExtResource("2_76v1n")]
+position = Vector2(3447, 19)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background4/cosmos-background3/cosmos-background2/cosmos-background2" unique_id=802714185 instance=ExtResource("2_76v1n")]
+position = Vector2(-3723, -2332)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background4/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=1147593447 instance=ExtResource("2_76v1n")]
+position = Vector2(3292, -156)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background4/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=1902162016 instance=ExtResource("2_76v1n")]
+position = Vector2(-3684, -1866)
+
+[node name="cosmos-background5" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2" unique_id=254411771 instance=ExtResource("2_76v1n")]
+position = Vector2(-14096, 4808)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background5" unique_id=534928441 instance=ExtResource("2_76v1n")]
+position = Vector2(-3432, -2041)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background5/cosmos-background2" unique_id=1828776944 instance=ExtResource("2_76v1n")]
+position = Vector2(3447, 19)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background5/cosmos-background2/cosmos-background2" unique_id=1878367887 instance=ExtResource("2_76v1n")]
+position = Vector2(-3723, -2332)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background5/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=1266654039 instance=ExtResource("2_76v1n")]
+position = Vector2(3292, -156)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background5/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=1506746659 instance=ExtResource("2_76v1n")]
+position = Vector2(17314, -3381)
+
+[node name="cosmos-background3" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background5" unique_id=144471909 instance=ExtResource("2_76v1n")]
+position = Vector2(-17710, -1216)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background5/cosmos-background3" unique_id=1080714393 instance=ExtResource("2_76v1n")]
+position = Vector2(-3432, -2041)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background5/cosmos-background3/cosmos-background2" unique_id=1136914573 instance=ExtResource("2_76v1n")]
+position = Vector2(3447, 19)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background5/cosmos-background3/cosmos-background2/cosmos-background2" unique_id=732844445 instance=ExtResource("2_76v1n")]
+position = Vector2(-3723, -2332)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background5/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=1408451632 instance=ExtResource("2_76v1n")]
+position = Vector2(3292, -156)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background5/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=881102098 instance=ExtResource("2_76v1n")]
+position = Vector2(-3684, -1866)
+
+[node name="cosmos-background4" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background5" unique_id=1757257577 instance=ExtResource("2_76v1n")]
+position = Vector2(-17710, -1216)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background5/cosmos-background4" unique_id=893503605 instance=ExtResource("2_76v1n")]
+position = Vector2(-3432, -2041)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background5/cosmos-background4/cosmos-background2" unique_id=1523027188 instance=ExtResource("2_76v1n")]
+position = Vector2(3447, 19)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background5/cosmos-background4/cosmos-background2/cosmos-background2" unique_id=1807147282 instance=ExtResource("2_76v1n")]
+position = Vector2(-3723, -2332)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background5/cosmos-background4/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=1703310780 instance=ExtResource("2_76v1n")]
+position = Vector2(3292, -156)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background5/cosmos-background4/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=2048496177 instance=ExtResource("2_76v1n")]
+position = Vector2(-3684, -1866)
+
+[node name="cosmos-background3" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background5/cosmos-background4" unique_id=1746076796 instance=ExtResource("2_76v1n")]
+position = Vector2(-17710, -1216)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background5/cosmos-background4/cosmos-background3" unique_id=893658359 instance=ExtResource("2_76v1n")]
+position = Vector2(-3432, -2041)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background5/cosmos-background4/cosmos-background3/cosmos-background2" unique_id=1762351093 instance=ExtResource("2_76v1n")]
+position = Vector2(3447, 19)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background5/cosmos-background4/cosmos-background3/cosmos-background2/cosmos-background2" unique_id=1788198418 instance=ExtResource("2_76v1n")]
+position = Vector2(-3723, -2332)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background5/cosmos-background4/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=1441957480 instance=ExtResource("2_76v1n")]
+position = Vector2(3292, -156)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background5/cosmos-background4/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=2048412636 instance=ExtResource("2_76v1n")]
+position = Vector2(-3684, -1866)
+
+[node name="cosmos-background4" parent="cosmos-background2" unique_id=429823251 instance=ExtResource("2_76v1n")]
+position = Vector2(3368, -539)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background4" unique_id=381378048 instance=ExtResource("2_76v1n")]
+position = Vector2(-3393, -2235)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background4/cosmos-background2" unique_id=240747531 instance=ExtResource("2_76v1n")]
+position = Vector2(3524, -272)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background4/cosmos-background2/cosmos-background2" unique_id=161491564 instance=ExtResource("2_76v1n")]
+position = Vector2(-3665, -1846)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background4/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=1567137311 instance=ExtResource("2_76v1n")]
+position = Vector2(3116, 58)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background4/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=1755531655 instance=ExtResource("2_76v1n")]
+position = Vector2(-3432, -2041)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background4/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=1666332828 instance=ExtResource("2_76v1n")]
+position = Vector2(3447, 19)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background4/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=1803073961 instance=ExtResource("2_76v1n")]
+position = Vector2(-3723, -2332)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background4/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=455631308 instance=ExtResource("2_76v1n")]
+position = Vector2(3292, -156)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background4/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=822412773 instance=ExtResource("2_76v1n")]
+position = Vector2(-3684, -1866)
+
+[node name="cosmos-background3" parent="cosmos-background2/cosmos-background4" unique_id=558703512 instance=ExtResource("2_76v1n")]
+position = Vector2(3368, -539)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background4/cosmos-background3" unique_id=2087907549 instance=ExtResource("2_76v1n")]
+position = Vector2(-3393, -2235)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background4/cosmos-background3/cosmos-background2" unique_id=1684226567 instance=ExtResource("2_76v1n")]
+position = Vector2(7448, 2688)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background4/cosmos-background3/cosmos-background2/cosmos-background2" unique_id=1473968621 instance=ExtResource("2_76v1n")]
+position = Vector2(-3665, -1846)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background4/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=1366661943 instance=ExtResource("2_76v1n")]
+position = Vector2(3116, 58)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background4/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=582175600 instance=ExtResource("2_76v1n")]
+position = Vector2(-20265, -5862)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background4/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=1244032561 instance=ExtResource("2_76v1n")]
+position = Vector2(3447, 19)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background4/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=2001345293 instance=ExtResource("2_76v1n")]
+position = Vector2(-3723, -2332)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background4/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=1448005998 instance=ExtResource("2_76v1n")]
+position = Vector2(3292, -156)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background4/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=267712055 instance=ExtResource("2_76v1n")]
+position = Vector2(-3684, -1866)
+
+[node name="cosmos-background3" parent="cosmos-background2/cosmos-background4/cosmos-background3/cosmos-background2/cosmos-background2" unique_id=1766438320 instance=ExtResource("2_76v1n")]
+position = Vector2(7620, 2791)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background4/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3" unique_id=695570926 instance=ExtResource("2_76v1n")]
+position = Vector2(-3665, -1846)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background4/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2" unique_id=132328490 instance=ExtResource("2_76v1n")]
+position = Vector2(-17710, -1216)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background4/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2" unique_id=1127857976 instance=ExtResource("2_76v1n")]
+position = Vector2(-3432, -2041)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background4/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=1410565704 instance=ExtResource("2_76v1n")]
+position = Vector2(3447, 19)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background4/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=958829754 instance=ExtResource("2_76v1n")]
+position = Vector2(-3723, -2332)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background4/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=826172489 instance=ExtResource("2_76v1n")]
+position = Vector2(3292, -156)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background4/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=570406341 instance=ExtResource("2_76v1n")]
+position = Vector2(-3684, -1866)
+
+[node name="cosmos-background3" parent="cosmos-background2/cosmos-background4/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2" unique_id=929479374 instance=ExtResource("2_76v1n")]
+position = Vector2(-17710, -1216)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background4/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3" unique_id=1625702378 instance=ExtResource("2_76v1n")]
+position = Vector2(-3432, -2041)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background4/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2" unique_id=1393806143 instance=ExtResource("2_76v1n")]
+position = Vector2(3447, 19)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background4/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2" unique_id=932363607 instance=ExtResource("2_76v1n")]
+position = Vector2(-3723, -2332)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background4/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=1125641494 instance=ExtResource("2_76v1n")]
+position = Vector2(3292, -156)
+
+[node name="cosmos-background2" parent="cosmos-background2/cosmos-background4/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background3/cosmos-background2/cosmos-background2/cosmos-background2/cosmos-background2" unique_id=335079769 instance=ExtResource("2_76v1n")]
+position = Vector2(-3684, -1866)
+
+[node name="planets" parent="." unique_id=73562466 instance=ExtResource("2_i8n5b")]
+position = Vector2(-170, -15)
+
+[node name="Spaceship" parent="." unique_id=106340864 instance=ExtResource("3_76v1n")]
+position = Vector2(1039, 732)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=540066493 node_paths=PackedStringArray("target")]
 position = Vector2(948, 538)
 position_smoothing_enabled = true
 script = ExtResource("4_irmld")
 target = NodePath("../Spaceship")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=199504296]
 
-[node name="Label" type="Label" parent="CanvasLayer"]
-offset_left = -16.0
-offset_top = 933.0
-offset_right = 1907.0
-offset_bottom = 1133.0
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=838459037]
+offset_left = 804.0
+offset_top = 954.0
+offset_right = 2727.0
+offset_bottom = 1154.0
 theme_override_fonts/font = ExtResource("6_76v1n")
 theme_override_font_sizes/font_size = 105
-text = "hey hey hey"
+text = "<instructions here>"
 script = SubResource("GDScript_76v1n")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/Label"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/Label" unique_id=1706832149]
